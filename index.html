@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>JsonGet</title>
+    <script src="/index.js" defer></script>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+    </style>
+</head>
+<body>
+    <label for="todoId">Enter Id:</label>
+    <input type="text" id="todoId" name="todoId">
+    <button type="submit" id="submit" onclick="callRest()">Submit</button> 
+    <button type="submit" id="submit" onclick="callAllUser()">Get All Users</button>
+    <div id="messageArea"></div>
+
+    <div>
+        <table id="userTable">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>USER NAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>WEBSITE</th>
+            </tr>
+        </table>
+    </div>
+</body>
